@@ -55,11 +55,7 @@ class Random(Cog):
             title=m['name'],
             url=m['link'],
             color=self.get_color(m['gameMode']['color']),
-            timestamp=datetime.now(),
-            description=f'''
-                    {m['environment']['name']}
-                    {m['gameMode']['hash']}
-                    ''')
+            timestamp=datetime.now())
             
             embed.set_image(url=m['imageUrl'])
                 
@@ -90,11 +86,7 @@ class Random(Cog):
             title=m['name'],
             url=m['link'],
             color=self.get_color(m['gameMode']['color']),
-            timestamp=datetime.now(),
-            description=f'''
-                    {m['environment']['name']}
-                    {m['gameMode']['hash']}
-                    ''')
+            timestamp=datetime.now())
             
             embed.set_image(url=m['imageUrl'])
                 
@@ -129,10 +121,6 @@ class Random(Cog):
         title=brawl['name'],
         url=brawl['link'],
         color=self.get_color(brawl['rarity']['color']),
-        description=f'''
-                    {brawl['class']['name']}
-                    {brawl['rarity']['name']}
-                    ''',
         timestamp=datetime.now())
         
         embed.set_image(url=brawl['imageUrl'])
@@ -158,10 +146,6 @@ class Random(Cog):
         title=brawl['name'],
         url=brawl['link'],
         color=self.get_color(brawl['rarity']['color']),
-        description=f'''
-                    {brawl['class']['name']}
-                    {brawl['rarity']['name']}
-                    ''',
         timestamp=datetime.now())
         
         embed.set_image(url=brawl['imageUrl'])
